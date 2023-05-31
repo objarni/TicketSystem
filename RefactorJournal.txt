@@ -15,7 +15,7 @@ For untested / legacy code, I prefer to use Approval Tests. So I went ahead and 
 That turned out to be tricky, since both the UserRepository crashed on creation, and DateTime.Now has side effects. It took quite some effort to get the code coverage up on the method, and I basically spent the rest of the time putting that safety net in place.
 
 - What did I like?
-I liked the actualy exercise, I havent' seen a refatoring exercise as the test for a developer job before! I think this is really good, and much better than "solve this or that problem really quickly"-kinds-of-tests. Kudos!
+I liked the exercise, I havent' seen a refactoring exercise as the test for a developer job before! I think this is really good, and much better than "solve this or that problem really quickly"-kinds-of-tests. Kudos!
 I also liked that it was actually a challenging refactoring exercise, not some "side effect free" code kata style problem.
 I liked that I started out with PITS and safe refactorings, this felt value-quick and I gained some insight on the "domain" of the problem just by doing this.
 
