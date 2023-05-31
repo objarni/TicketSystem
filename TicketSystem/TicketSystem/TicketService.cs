@@ -5,9 +5,9 @@ namespace TicketManagementSystem;
 
 public class TicketService
 {
-    public int CreateTicket(string t, Priority priority, string assignedTo, string desc, DateTime d, bool isPayingCustomer)
+    public int CreateTicket(string t, Priority priority, string assignedTo, string description, DateTime d, bool isPayingCustomer)
     {
-        if (t == null || desc == null || t == "" || desc == "")
+        if (t == null || description == null || t == "" || description == "")
         {
             throw new InvalidTicketException("Title or description were null");
         }
@@ -79,7 +79,7 @@ public class TicketService
             Title = t,
             AssignedUser = user,
             Priority = priority,
-            Description = desc,
+            Description = description,
             Created = d,
             PriceDollars = price,
             AccountManager = accountManager
