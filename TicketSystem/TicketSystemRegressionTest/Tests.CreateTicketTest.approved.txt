@@ -1,7 +1,89 @@
-﻿[,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+﻿[,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
    at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
    at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
 [,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": null,
+  "AssignedUser": {
+    "Username": "objarni",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
    at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
    at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
 [title,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
@@ -10,7 +92,7 @@
   "Priority": 0,
   "Description": "description",
   "AssignedUser": {
-    "Username": "username",
+    "Username": "objarni",
     "FirstName": "Olof",
     "LastName": "Bjarnason"
   },
@@ -18,13 +100,161 @@
   "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
+[title,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": null,
+  "AssignedUser": {
+    "Username": "objarni",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "objarni",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": null,
+  "AssignedUser": {
+    "Username": "objarni",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
 [title,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
   "Description": "description",
   "AssignedUser": {
-    "Username": "username",
+    "Username": "objarni",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": null,
+  "AssignedUser": {
+    "Username": "objarni",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "objarni",
     "FirstName": "Olof",
     "LastName": "Bjarnason"
   },
