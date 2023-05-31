@@ -5,10 +5,10 @@ namespace TicketManagementSystem;
 
 public class TicketService
 {
-    public int CreateTicket(string ticketStringlyType, Priority priority, string assignedTo, string description,
+    public int CreateTicket(string title, Priority priority, string assignedTo, string description,
         DateTime created, bool isPayingCustomer)
     {
-        if (ticketStringlyType == null || description == null || ticketStringlyType == "" || description == "")
+        if (title == null || description == null || title == "" || description == "")
             throw new InvalidTicketException("Title or description were null");
 
         User user = null;
@@ -34,8 +34,8 @@ public class TicketService
             }
         }
 
-        if ((ticketStringlyType.Contains("Crash") || ticketStringlyType.Contains("Important") ||
-             ticketStringlyType.Contains("Failure")) && !priorityRaised)
+        if ((title.Contains("Crash") || title.Contains("Important") ||
+             title.Contains("Failure")) && !priorityRaised)
         {
             if (priority == Priority.Low)
                 priority = Priority.Medium;
@@ -45,7 +45,7 @@ public class TicketService
         if (priority == Priority.High)
         {
             var emailService = new EmailServiceProxy();
-            emailService.SendEmailToAdministrator(ticketStringlyType, assignedTo);
+            emailService.SendEmailToAdministrator(title, assignedTo);
         }
 
         double price = 0;
@@ -58,7 +58,7 @@ public class TicketService
 
         var ticket = new Ticket
         {
-            Title = ticketStringlyType,
+            Title = title,
             AssignedUser = user,
             Priority = priority,
             Description = description,
