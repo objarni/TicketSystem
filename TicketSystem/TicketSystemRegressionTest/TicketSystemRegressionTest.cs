@@ -14,7 +14,6 @@ public class Tests
     [Test]
     public void CreateTicketTest()
     {
-        var title = "title";
         var priority = Priority.High;
         string assignedTo = null;
         var description = "description";
@@ -25,9 +24,12 @@ public class Tests
         user.Username = "username";
         user.FirstName = "Olof";
         user.LastName = "Bjarnason";
+        var titles
+            = new[] { null, "title" };
         CombinationApprovals.VerifyAllCombinations(
-            ToVerify,
-            new[] { title },
+            (a1, a2, a3, a4, a5, a6, a7, a8) =>
+                Scrubber(ToVerify(a1, a2, a3, a4, a5, a6, a7, a8)),
+            titles,
             new[] { priority },
             new[] { assignedTo },
             new[] { description },
@@ -35,26 +37,6 @@ public class Tests
             new[] { isPayingCustomer },
             new[] { user },
             new[] { utcNow });
-    }
-
-    [UseReporter(typeof(DiffReporter))]
-    [Test]
-    public void CreateTicketTestWithException()
-    {
-        string title = null;
-        var priority = Priority.High;
-        string assignedTo = null;
-        var description = "description";
-        var created = DateTime.Parse("2023-05-31 12:00");
-        var utcNow = DateTime.Parse("2023-05-31 15:00");
-        var isPayingCustomer = false;
-        var user = new User();
-        user.Username = "username";
-        user.FirstName = "Olof";
-        user.LastName = "Bjarnason";
-        var toVerify = ToVerify(title, priority, assignedTo, description, created, isPayingCustomer, user, utcNow);
-
-        Approvals.Verify(toVerify, Scrubber);
     }
 
     private string Scrubber(string toVerify)
