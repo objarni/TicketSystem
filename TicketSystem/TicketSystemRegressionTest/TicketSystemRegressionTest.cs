@@ -1,4 +1,5 @@
 using System.Text.Json;
+using ApprovalTests;
 using ApprovalTests.Reporters;
 using TicketManagementSystem;
 
@@ -6,11 +7,6 @@ namespace TicketSystemRegressionTest;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     [UseReporter(typeof(DiffReporter))]
     [Test]
     public void CreateTicketTest()
@@ -29,13 +25,13 @@ public class Tests
             title,
             priority,
             assignedTo,
-            description, 
-            created, 
+            description,
+            created,
             isPayingCustomer,
             user);
-        var toVerify = JsonSerializer.Serialize(ticket, 
-            new JsonSerializerOptions() { WriteIndented = true });
-        
-        ApprovalTests.Approvals.Verify(toVerify);
+        var toVerify = JsonSerializer.Serialize(ticket,
+            new JsonSerializerOptions { WriteIndented = true });
+
+        Approvals.Verify(toVerify);
     }
 }
