@@ -5,7 +5,7 @@ namespace TicketManagementSystem;
 
 public class TicketService
 {
-    public int CreateTicket(string t, Priority p, string assignedTo, string desc, DateTime d, bool isPayingCustomer)
+    public int CreateTicket(string t, Priority priority, string assignedTo, string desc, DateTime d, bool isPayingCustomer)
     {
         if (t == null || desc == null || t == "" || desc == "")
         {
@@ -29,31 +29,31 @@ public class TicketService
         var priorityRaised = false;
         if (d < DateTime.UtcNow - TimeSpan.FromHours(1))
         {
-            if (p == Priority.Low)
+            if (priority == Priority.Low)
             {
-                p = Priority.Medium;
+                priority = Priority.Medium;
                 priorityRaised = true;
             }
-            else if (p == Priority.Medium)
+            else if (priority == Priority.Medium)
             {
-                p = Priority.High;
+                priority = Priority.High;
                 priorityRaised = true;
             }
         }
 
         if ((t.Contains("Crash") || t.Contains("Important") || t.Contains("Failure")) && !priorityRaised)
         {
-            if (p == Priority.Low)
+            if (priority == Priority.Low)
             {
-                p = Priority.Medium;
+                priority = Priority.Medium;
             }
-            else if (p == Priority.Medium)
+            else if (priority == Priority.Medium)
             {
-                p = Priority.High;
+                priority = Priority.High;
             }
         }
 
-        if (p == Priority.High)
+        if (priority == Priority.High)
         {
             var emailService = new EmailServiceProxy();
             emailService.SendEmailToAdministrator(t, assignedTo);
@@ -64,7 +64,7 @@ public class TicketService
         if (isPayingCustomer)
         {
             accountManager = new UserRepository().GetAccountManager();
-            if (p == Priority.High)
+            if (priority == Priority.High)
             {
                 price = 100;
             }
@@ -78,7 +78,7 @@ public class TicketService
         {
             Title = t,
             AssignedUser = user,
-            Priority = p,
+            Priority = priority,
             Description = desc,
             Created = d,
             PriceDollars = price,
