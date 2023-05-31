@@ -22,20 +22,17 @@ public class Tests
         user.Username = "username";
         user.FirstName = "Olof";
         user.LastName = "Bjarnason";
-        var ticket = TicketService.CreateTicketInner(
+        Approvals.Verify(ToVerify(
             title,
             priority,
             assignedTo,
             description,
             created,
             isPayingCustomer,
-            user);
-        var toVerify = JsonSerializer.Serialize(ticket,
-            new JsonSerializerOptions { WriteIndented = true });
+            user));
+    }
 
-        Approvals.Verify(toVerify);
-    }    [Test]
-
+    [Test]
     public void CreateTicketTestWithException()
     {
         string title = null;
@@ -50,7 +47,7 @@ public class Tests
         user.LastName = "Bjarnason";
         var toVerify = ToVerify(title, priority, assignedTo, description, created, isPayingCustomer, user);
 
-        Approvals.Verify(toVerify, scrubber:Scrubber);
+        Approvals.Verify(toVerify, Scrubber);
     }
 
     private string Scrubber(string toVerify)
@@ -62,7 +59,7 @@ public class Tests
     private static string ToVerify(string? title, Priority priority, string? assignedTo, string description,
         DateTime created, bool isPayingCustomer, User user)
     {
-        string toVerify = "";
+        var toVerify = "";
         try
         {
             var ticket = TicketService.CreateTicketInner(
