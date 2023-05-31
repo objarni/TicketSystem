@@ -1,6 +1,5 @@
 using System.Text.Json;
 using System.Text.RegularExpressions;
-using ApprovalTests;
 using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 using TicketManagementSystem;
@@ -14,7 +13,6 @@ public class Tests
     [Test]
     public void CreateTicketTest()
     {
-        var utcNow = DateTime.Parse("2023-05-31 15:00");
         var user = new User
         {
             FirstName = "Olof", LastName = "Bjarnason", Username = "objarni"
@@ -24,8 +22,9 @@ public class Tests
         var priorities = new[] { Priority.Medium, Priority.High };
         var assignedTos = new[] { (string)null, "Bjarni" };
         var descriptions = new[] { null, "description" };
-        var createdTimes = new[] { DateTime.Parse("2023-05-31 12:00") };
         var users = new[] { user };
+        var createdTimes = new[] { DateTime.Parse("2023-05-31 12:00") };
+        var utcNowTimes = new[] { DateTime.Parse("2023-05-31 15:00"), DateTime.Parse("2023-05-31 12:30") };
         CombinationApprovals.VerifyAllCombinations(
             (a1, a2, a3, a4, a5, a6, a7, a8) =>
                 Scrubber(ToVerify(a1, a2, a3, a4, a5, a6, a7, a8)),
@@ -36,7 +35,7 @@ public class Tests
             createdTimes,
             new[] { true, false },
             users,
-            new[] { utcNow });
+            utcNowTimes);
     }
 
     private string Scrubber(string toVerify)
