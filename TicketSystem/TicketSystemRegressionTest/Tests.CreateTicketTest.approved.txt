@@ -1,6 +1,23 @@
-﻿[,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+﻿[,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
    at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
    at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
+   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "username",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
 [title,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",

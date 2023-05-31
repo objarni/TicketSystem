@@ -14,7 +14,6 @@ public class Tests
     [Test]
     public void CreateTicketTest()
     {
-        var priority = Priority.High;
         string assignedTo = null;
         var description = "description";
         var created = DateTime.Parse("2023-05-31 12:00");
@@ -26,11 +25,12 @@ public class Tests
         user.LastName = "Bjarnason";
         var titles
             = new[] { null, "title" };
+        var priorities = new[] { Priority.Medium, Priority.High };
         CombinationApprovals.VerifyAllCombinations(
             (a1, a2, a3, a4, a5, a6, a7, a8) =>
                 Scrubber(ToVerify(a1, a2, a3, a4, a5, a6, a7, a8)),
             titles,
-            new[] { priority },
+            priorities,
             new[] { assignedTo },
             new[] { description },
             new[] { created },
