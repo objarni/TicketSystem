@@ -25,10 +25,17 @@ public class TicketService
     public static Ticket CreateTicketInner(string title, Priority priority, string? assignedTo, string description,
         DateTime created, bool isPayingCustomer, User? user)
     {
+        var utcNow = DateTime.UtcNow;
+        return TicketInnerDeterministic(title, priority, assignedTo, description, created, isPayingCustomer, user, utcNow);
+    }
+
+    public static Ticket TicketInnerDeterministic(string title, Priority priority, string? assignedTo, string description,
+        DateTime created, bool isPayingCustomer, User? user, DateTime utcNow)
+    {
         if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
 
         var priorityRaised = false;
-        if (created < DateTime.UtcNow - TimeSpan.FromHours(1))
+        if (created < utcNow - TimeSpan.FromHours(1))
         {
             if (priority == Priority.Low)
             {

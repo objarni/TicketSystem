@@ -9,6 +9,6 @@
     "LastName": "Bjarnason"
   },
   "AccountManager": null,
-  "Created": "0001-01-01T00:00:00",
+  "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
