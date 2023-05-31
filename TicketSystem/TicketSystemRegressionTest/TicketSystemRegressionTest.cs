@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using ApprovalTests;
 using ApprovalTests.Reporters;
 using TicketManagementSystem;
@@ -47,6 +48,20 @@ public class Tests
         user.Username = "username";
         user.FirstName = "Olof";
         user.LastName = "Bjarnason";
+        var toVerify = ToVerify(title, priority, assignedTo, description, created, isPayingCustomer, user);
+
+        Approvals.Verify(toVerify, scrubber:Scrubber);
+    }
+
+    private string Scrubber(string toVerify)
+    {
+        return Regex.Replace(toVerify, ":line (\\d+)", "line: <LINE>",
+            RegexOptions.Multiline);
+    }
+
+    private static string ToVerify(string? title, Priority priority, string? assignedTo, string description,
+        DateTime created, bool isPayingCustomer, User user)
+    {
         string toVerify = "";
         try
         {
@@ -66,6 +81,6 @@ public class Tests
             toVerify = e.ToString();
         }
 
-        Approvals.Verify(toVerify);
+        return toVerify;
     }
 }
