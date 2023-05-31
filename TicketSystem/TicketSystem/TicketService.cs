@@ -5,7 +5,7 @@ namespace TicketManagementSystem;
 
 public class TicketService
 {
-    public int CreateTicket(string t, Priority priority, string assignedTo, string description, DateTime d, bool isPayingCustomer)
+    public int CreateTicket(string t, Priority priority, string assignedTo, string description, DateTime created, bool isPayingCustomer)
     {
         if (t == null || description == null || t == "" || description == "")
         {
@@ -27,7 +27,7 @@ public class TicketService
         }
 
         var priorityRaised = false;
-        if (d < DateTime.UtcNow - TimeSpan.FromHours(1))
+        if (created < DateTime.UtcNow - TimeSpan.FromHours(1))
         {
             if (priority == Priority.Low)
             {
@@ -80,7 +80,7 @@ public class TicketService
             AssignedUser = user,
             Priority = priority,
             Description = description,
-            Created = d,
+            Created = created,
             PriceDollars = price,
             AccountManager = accountManager
         };
