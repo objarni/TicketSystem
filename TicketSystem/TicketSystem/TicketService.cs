@@ -73,9 +73,9 @@ public class TicketService
     public void AssignTicket(int id, string username)
     {
         User user = null;
-        using (var ur = new UserRepository())
+        using (var userRepository = new UserRepository())
         {
-            if (username != null) user = ur.GetUser(username);
+            if (username != null) user = userRepository.GetUser(username);
         }
 
         if (user == null) throw new UnknownUserException("User not found");
