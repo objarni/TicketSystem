@@ -53,10 +53,7 @@ public class TicketService
         if (isPayingCustomer)
         {
             accountManager = new UserRepository().GetAccountManager();
-            if (priority == Priority.High)
-                price = 100;
-            else
-                price = 50;
+            price = priority == Priority.High ? 100 : 50;
         }
 
         var ticket = new Ticket
@@ -70,9 +67,7 @@ public class TicketService
             AccountManager = accountManager
         };
 
-        var id = TicketRepository.CreateTicket(ticket);
-
-        return id;
+        return TicketRepository.CreateTicket(ticket);
     }
 
     public void AssignTicket(int id, string username)
