@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using ApprovalTests;
+using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 using TicketManagementSystem;
 
@@ -24,15 +25,16 @@ public class Tests
         user.Username = "username";
         user.FirstName = "Olof";
         user.LastName = "Bjarnason";
-        Approvals.Verify(ToVerify(
-            title,
-            priority,
-            assignedTo,
-            description,
-            created,
-            isPayingCustomer,
-            user,
-            utcNow));
+        CombinationApprovals.VerifyAllCombinations(
+            ToVerify,
+            new[] { title },
+            new[] { priority },
+            new[] { assignedTo },
+            new[] { description },
+            new[] { created },
+            new[] { isPayingCustomer },
+            new[] { user },
+            new[] { utcNow });
     }
 
     [UseReporter(typeof(DiffReporter))]
