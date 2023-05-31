@@ -14,28 +14,28 @@ public class Tests
     [Test]
     public void CreateTicketTest()
     {
-        string assignedTo = null;
-        var description = "description";
-        var created = DateTime.Parse("2023-05-31 12:00");
         var utcNow = DateTime.Parse("2023-05-31 15:00");
-        var isPayingCustomer = false;
-        var user = new User();
-        user.Username = "username";
-        user.FirstName = "Olof";
-        user.LastName = "Bjarnason";
+        var user = new User
+        {
+            FirstName = "Olof", LastName = "Bjarnason", Username = "objarni"
+        };
         var titles
             = new[] { null, "title" };
         var priorities = new[] { Priority.Medium, Priority.High };
+        var assignedTos = new[] { (string)null, "Bjarni" };
+        var descriptions = new[] { null, "description" };
+        var createdTimes = new[] { DateTime.Parse("2023-05-31 12:00") };
+        var users = new[] { user };
         CombinationApprovals.VerifyAllCombinations(
             (a1, a2, a3, a4, a5, a6, a7, a8) =>
                 Scrubber(ToVerify(a1, a2, a3, a4, a5, a6, a7, a8)),
             titles,
             priorities,
-            new[] { assignedTo },
-            new[] { description },
-            new[] { created },
-            new[] { isPayingCustomer },
-            new[] { user },
+            assignedTos,
+            descriptions,
+            createdTimes,
+            new[] { true, false },
+            users,
             new[] { utcNow });
     }
 
