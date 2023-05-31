@@ -17,6 +17,14 @@ public class TicketService
             if (assignedTo != null) user = ur.GetUser(assignedTo);
         }
 
+        var ticket = CreateTicketInner(title, priority, assignedTo, description, created, isPayingCustomer, user);
+
+        return TicketRepository.CreateTicket(ticket);
+    }
+
+    public static Ticket CreateTicketInner(string title, Priority priority, string? assignedTo, string description,
+        DateTime created, bool isPayingCustomer, User? user)
+    {
         if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
 
         var priorityRaised = false;
@@ -66,8 +74,7 @@ public class TicketService
             PriceDollars = price,
             AccountManager = accountManager
         };
-
-        return TicketRepository.CreateTicket(ticket);
+        return ticket;
     }
 
     public void AssignTicket(int id, string username)

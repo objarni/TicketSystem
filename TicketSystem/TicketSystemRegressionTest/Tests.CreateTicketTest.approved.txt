@@ -1,0 +1,14 @@
+﻿{
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "username",
+    "FirstName": "Olof",
+    "LastName": "Bjarnason"
+  },
+  "AccountManager": null,
+  "Created": "0001-01-01T00:00:00",
+  "PriceDollars": 0
+}
