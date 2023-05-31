@@ -1,0 +1,3 @@
+﻿System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicketManagementSystem.TicketService.CreateTicketInner(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.cs:line 45
+   at TicketSystemRegressionTest.Tests.CreateTicketTestWithException() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.cs:line 53
