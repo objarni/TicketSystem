@@ -18,7 +18,7 @@ public class Tests
             FirstName = "Olof", LastName = "Bjarnason", Username = "objarni"
         };
         var titles
-            = new[] { null, "title" };
+            = new[] { null, "title", "Crash" };
         var priorities = new[] { Priority.Medium, Priority.High };
         var assignedTos = new[] { (string)null, "Bjarni" };
         var descriptions = new[] { null, "description" };
