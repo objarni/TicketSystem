@@ -30,7 +30,8 @@ public class TicketService
     }
 
     public static Ticket TicketInnerDeterministic(string title, Priority priority, string? assignedTo, string description,
-        DateTime created, bool isPayingCustomer, User? user, DateTime utcNow)
+        DateTime created, bool isPayingCustomer, User? user, DateTime utcNow,
+        IEmailService emailService = null)
     {
         if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
 
@@ -59,7 +60,8 @@ public class TicketService
 
         if (priority == Priority.High)
         {
-            var emailService = new EmailServiceProxy();
+            if (emailService == null)
+                emailService = new EmailServiceProxy();
             emailService.SendEmailToAdministrator(title, assignedTo);
         }
 

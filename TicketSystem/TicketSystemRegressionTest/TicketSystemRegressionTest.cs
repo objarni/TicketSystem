@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
+using EmailService;
 using TicketManagementSystem;
 
 namespace TicketSystemRegressionTest;
@@ -9,20 +10,31 @@ namespace TicketSystemRegressionTest;
 [UseReporter(typeof(DiffReporter))]
 public class Tests
 {
+    class SpyingEmailService : IEmailService
+    {
+        public string SentIncidentTitle = "", SentAssignedTo = "";
+
+        public void SendEmailToAdministrator(string incidentTitle, string assignedTo)
+        {
+            SentIncidentTitle = incidentTitle;
+            SentAssignedTo = assignedTo;
+        }
+    }
     [UseReporter(typeof(DiffReporter))]
     [Test]
     public void CreateTicketTest()
     {
+        UserRepository.TestMode = true;
         var user = new User
         {
             FirstName = "Olof", LastName = "Bjarnason", Username = "objarni"
         };
         var titles
             = new[] { null, "title", "Crash" };
-        var priorities = new[] { Priority.Medium, Priority.High };
+        var priorities = new[] { Priority.Low, Priority.Medium, Priority.High };
         var assignedTos = new[] { (string)null, "Bjarni" };
         var descriptions = new[] { null, "description" };
-        var users = new[] { user };
+        var users = new[] { null, user };
         var createdTimes = new[] { DateTime.Parse("2023-05-31 12:00") };
         var utcNowTimes = new[] { DateTime.Parse("2023-05-31 15:00"), DateTime.Parse("2023-05-31 12:30") };
         CombinationApprovals.VerifyAllCombinations(
@@ -50,6 +62,7 @@ public class Tests
         var toVerify = "";
         try
         {
+            var spyingEmailService = new SpyingEmailService();
             var ticket = TicketService.TicketInnerDeterministic(
                 title,
                 priority,
@@ -58,9 +71,15 @@ public class Tests
                 created,
                 isPayingCustomer,
                 user,
-                utcNow);
+                utcNow,
+                spyingEmailService);
             toVerify = JsonSerializer.Serialize(ticket,
                 new JsonSerializerOptions { WriteIndented = true });
+            if (spyingEmailService.SentIncidentTitle != "")
+            {
+                toVerify += "\nSent incident title: " + spyingEmailService.SentIncidentTitle;
+                toVerify += "\nSent assigned to: " + spyingEmailService.SentAssignedTo;
+            }
         }
         catch (Exception e)
         {
