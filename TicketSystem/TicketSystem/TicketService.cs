@@ -8,6 +8,15 @@ public class TicketService
     public int CreateTicket(string title, Priority priority, string assignedTo, string description,
         DateTime created, bool isPayingCustomer)
     {
+        var ticket = TicketInnerDeterministic(title, priority, assignedTo, description, created, isPayingCustomer);
+        return TicketRepository.CreateTicket(ticket);
+    }
+    
+    public static Ticket TicketInnerDeterministic(string title, Priority priority, string? assignedTo, string description,
+        DateTime created, bool isPayingCustomer,
+        DateTime? utcNow = null,
+        IEmailService emailService = null)
+    {
         if (title == null || description == null || title == "" || description == "")
             throw new InvalidTicketException("Title or description were null");
 
@@ -17,19 +26,14 @@ public class TicketService
             if (assignedTo != null) user = ur.GetUser(assignedTo);
         }
 
-        var ticket = TicketInnerDeterministic(title, priority, assignedTo, description, created, isPayingCustomer, user);
-
-        return TicketRepository.CreateTicket(ticket);
-    }
-    
-    public static Ticket TicketInnerDeterministic(string title, Priority priority, string? assignedTo, string description,
-        DateTime created, bool isPayingCustomer, User? user,
-        DateTime? utcNow = null,
-        IEmailService emailService = null)
-    {
         if (utcNow == null)
             utcNow = DateTime.UtcNow;
-
+        
+        using (var ur = new UserRepository())
+        {
+            if (assignedTo != null) user = ur.GetUser(assignedTo);
+        }
+        
         if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
 
         var priorityRaised = false;
