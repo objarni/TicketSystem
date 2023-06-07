@@ -12,8 +12,13 @@ public class TicketService
         return TicketRepository.CreateTicket(ticket);
     }
     
-    public static Ticket TicketInnerDeterministic(string title, Priority priority, string? assignedTo, string description,
-        DateTime created, bool isPayingCustomer,
+    public static Ticket TicketInnerDeterministic(
+        string title,
+        Priority priority,
+        string? assignedTo,
+        string description,
+        DateTime created,
+        bool isPayingCustomer,
         DateTime? utcNow = null,
         IEmailService emailService = null)
     {
