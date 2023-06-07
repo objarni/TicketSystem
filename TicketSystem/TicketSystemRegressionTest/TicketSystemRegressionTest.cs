@@ -28,7 +28,7 @@ public class Tests
         var users = new[] { null, user };
         var createdTimes = new[] { DateTime.Parse("2023-05-31 12:00") };
         var utcNowTimes = new[] { DateTime.Parse("2023-05-31 15:00"), DateTime.Parse("2023-05-31 12:30") };
-        var debugCombination = true;
+        var debugCombination = false;
         if (debugCombination)
             Approvals.Verify(ToVerify(
                 null,
