@@ -11,16 +11,6 @@ namespace TicketSystemRegressionTest;
 [UseReporter(typeof(DiffReporter))]
 public class Tests
 {
-    class SpyingEmailService : IEmailService
-    {
-        public string SentIncidentTitle = "", SentAssignedTo = "";
-
-        public void SendEmailToAdministrator(string incidentTitle, string assignedTo)
-        {
-            SentIncidentTitle = incidentTitle;
-            SentAssignedTo = assignedTo;
-        }
-    }
     [UseReporter(typeof(DiffReporter))]
     [Test]
     public void CreateTicketTest()
@@ -38,20 +28,29 @@ public class Tests
         var users = new[] { null, user };
         var createdTimes = new[] { DateTime.Parse("2023-05-31 12:00") };
         var utcNowTimes = new[] { DateTime.Parse("2023-05-31 15:00"), DateTime.Parse("2023-05-31 12:30") };
-        // Approvals.Verify(ToVerify(null,Priority.Low,"Bjarni",null,
-        //     DateTime.Parse("2023-05-31 12:00"),true,null,
-        //     DateTime.Parse("2023-05-31 15:00")));
-        CombinationApprovals.VerifyAllCombinations(
-            (a1, a2, a3, a4, a5, a6, a7, a8) =>
-                Scrubber(ToVerify(a1, a2, a3, a4, a5, a6, a8)),
-            titles,
-            priorities,
-            assignedTos,
-            descriptions,
-            createdTimes,
-            new[] { true, false },
-            users,
-            utcNowTimes);
+        var debugCombination = true;
+        if (debugCombination)
+            Approvals.Verify(ToVerify(
+                null,
+                Priority.Low,
+                "Bjarni",
+                null,
+                DateTime.Parse("2023-05-31 12:00"),
+                true,
+                DateTime.Parse("2023-05-31 15:00")));
+        else
+            CombinationApprovals.VerifyAllCombinations(
+                (a1, a2, a3, a4, a5, a6, a7, a8) =>
+                    Scrubber(ToVerify(a1, a2, a3, a4, a5, a6, a8)),
+                titles,
+                priorities,
+                assignedTos,
+                descriptions,
+                createdTimes,
+                new[] { true, false },
+                users,
+                utcNowTimes)
+        ;
     }
 
     private string Scrubber(string toVerify)
@@ -60,8 +59,14 @@ public class Tests
             RegexOptions.Multiline);
     }
 
-    private static string ToVerify(string? title, Priority priority, string? assignedTo, string description,
-        DateTime created, bool isPayingCustomer, DateTime utcNow)
+    private static string ToVerify(
+        string? title,
+        Priority priority,
+        string? assignedTo,
+        string description,
+        DateTime created,
+        bool isPayingCustomer,
+        DateTime utcNow)
     {
         var toVerify = "";
         try
@@ -90,5 +95,16 @@ public class Tests
         }
 
         return toVerify;
+    }
+
+    private class SpyingEmailService : IEmailService
+    {
+        public string SentIncidentTitle = "", SentAssignedTo = "";
+
+        public void SendEmailToAdministrator(string incidentTitle, string assignedTo)
+        {
+            SentIncidentTitle = incidentTitle;
+            SentAssignedTo = assignedTo;
+        }
     }
 }
