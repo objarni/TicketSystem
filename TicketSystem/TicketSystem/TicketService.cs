@@ -15,7 +15,7 @@ public class TicketService
     public static Ticket TicketInnerDeterministic(
         string title,
         Priority priority,
-        string? assignedTo,
+        string assignedTo,
         string description,
         DateTime created,
         bool isPayingCustomer,
@@ -25,22 +25,11 @@ public class TicketService
         if (title == null || description == null || title == "" || description == "")
             throw new InvalidTicketException("Title or description were null");
 
-        User user = null;
-        using (var ur = new UserRepository())
-        {
-            if (assignedTo != null) user = ur.GetUser(assignedTo);
-        }
+        User user = FindUserOrThrow(assignedTo);
 
         if (utcNow == null)
             utcNow = DateTime.UtcNow;
         
-        using (var ur = new UserRepository())
-        {
-            if (assignedTo != null) user = ur.GetUser(assignedTo);
-        }
-        
-        if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
-
         var priorityRaised = false;
         if (created < utcNow - TimeSpan.FromHours(1))
         {
@@ -92,15 +81,20 @@ public class TicketService
         return ticket;
     }
 
-    public void AssignTicket(int id, string username)
+    private static User FindUserOrThrow(string? assignedTo)
     {
         User user = null;
-        using (var userRepository = new UserRepository())
+        using (var ur = new UserRepository())
         {
-            if (username != null) user = userRepository.GetUser(username);
+            if (assignedTo != null) user = ur.GetUser(assignedTo);
         }
+        if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
+        return user;
+    }
 
-        if (user == null) throw new UnknownUserException("User not found");
+    public void AssignTicket(int id, string username)
+    {
+        User user = FindUserOrThrow(username);
 
         var ticket = TicketRepository.GetTicket(id);
 
