@@ -22,22 +22,15 @@ public class TicketService
         DateTime? utcNow = null,
         IEmailService emailService = null)
     {
+        if (utcNow == null)
+            utcNow = DateTime.UtcNow;
+
         if (title == null || description == null || title == "" || description == "")
             throw new InvalidTicketException("Title or description were null");
 
         var assignedUser = FindUserOrThrow(assignedTo);
 
-        if (utcNow == null)
-            utcNow = DateTime.UtcNow;
-
         priority = CalculatePriority(title, priority, created, utcNow.Value);
-
-        if (priority == Priority.High)
-        {
-            if (emailService == null)
-                emailService = new EmailServiceProxy();
-            emailService.SendEmailToAdministrator(title, assignedTo);
-        }
 
         var ticket = new Ticket
         {
@@ -49,6 +42,14 @@ public class TicketService
             PriceDollars = CalculatePrice(priority, isPayingCustomer),
             AccountManager = MaybeFindAccountManager(isPayingCustomer)
         };
+
+        if (priority == Priority.High)
+        {
+            if (emailService == null)
+                emailService = new EmailServiceProxy();
+            emailService.SendEmailToAdministrator(title, assignedTo);
+        }
+
         return ticket;
     }
 
