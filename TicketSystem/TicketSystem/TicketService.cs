@@ -66,14 +66,12 @@ public class TicketService
     {
         if (created < utcNow - TimeSpan.FromHours(1))
         {
-            if (priority == Priority.Low)
+            switch (priority)
             {
-                return Priority.Medium;
-            }
-
-            if (priority == Priority.Medium)
-            {
-                return Priority.High;
+                case Priority.Low:
+                    return Priority.Medium;
+                case Priority.Medium:
+                    return Priority.High;
             }
         }
 
