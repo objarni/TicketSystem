@@ -79,13 +79,11 @@ public class TicketService
             }
         }
 
-        if ((title.Contains("Crash") || title.Contains("Important") ||
-             title.Contains("Failure")) && !priorityRaised)
-        {
-            if (priority == Priority.Low)
-                priority = Priority.Medium;
-            else if (priority == Priority.Medium) priority = Priority.High;
-        }
+        if ((!title.Contains("Crash") && !title.Contains("Important") &&
+             !title.Contains("Failure")) || priorityRaised) return priority;
+        if (priority == Priority.Low)
+            priority = Priority.Medium;
+        else if (priority == Priority.Medium) priority = Priority.High;
 
         return priority;
     }
