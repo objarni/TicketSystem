@@ -45,6 +45,9 @@ public class TicketService
         if (isPayingCustomer)
         {
             accountManager = new UserRepository().GetAccountManager();
+        }        
+        if (isPayingCustomer)
+        {
             price = priority == Priority.High ? 100 : 50;
         }
 
