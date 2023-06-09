@@ -91,7 +91,7 @@ public class Tests
         }
         catch (Exception e)
         {
-            toVerify = e.ToString();
+            toVerify = e.Message;
         }
 
         return toVerify;
