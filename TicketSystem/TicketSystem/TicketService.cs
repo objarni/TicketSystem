@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json;
 using EmailService;
 
 namespace TicketManagementSystem;
@@ -30,28 +31,7 @@ public class TicketService
         if (utcNow == null)
             utcNow = DateTime.UtcNow;
         
-        var priorityRaised = false;
-        if (created < utcNow - TimeSpan.FromHours(1))
-        {
-            if (priority == Priority.Low)
-            {
-                priority = Priority.Medium;
-                priorityRaised = true;
-            }
-            else if (priority == Priority.Medium)
-            {
-                priority = Priority.High;
-                priorityRaised = true;
-            }
-        }
-
-        if ((title.Contains("Crash") || title.Contains("Important") ||
-             title.Contains("Failure")) && !priorityRaised)
-        {
-            if (priority == Priority.Low)
-                priority = Priority.Medium;
-            else if (priority == Priority.Medium) priority = Priority.High;
-        }
+        priority = CalculatePriority(title, priority, created, utcNow);
 
         if (priority == Priority.High)
         {
@@ -79,6 +59,35 @@ public class TicketService
             AccountManager = accountManager
         };
         return ticket;
+    }
+
+    private static Priority CalculatePriority(string title, Priority priority, DateTime created,
+        [DisallowNull] DateTime? utcNow)
+    {
+        var priorityRaised = false;
+        if (created < utcNow - TimeSpan.FromHours(1))
+        {
+            if (priority == Priority.Low)
+            {
+                priority = Priority.Medium;
+                priorityRaised = true;
+            }
+            else if (priority == Priority.Medium)
+            {
+                priority = Priority.High;
+                priorityRaised = true;
+            }
+        }
+
+        if ((title.Contains("Crash") || title.Contains("Important") ||
+             title.Contains("Failure")) && !priorityRaised)
+        {
+            if (priority == Priority.Low)
+                priority = Priority.Medium;
+            else if (priority == Priority.Medium) priority = Priority.High;
+        }
+
+        return priority;
     }
 
     private static User FindUserOrThrow(string? assignedTo)
