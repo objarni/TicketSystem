@@ -70,9 +70,7 @@ public class TicketService
 
         var important = title.Contains("Crash") || title.Contains("Important") ||
                         title.Contains("Failure");
-        if (important) return RaisePriority(priority);
-
-        return priority;
+        return important ? RaisePriority(priority) : priority;
     }
 
     private static Priority RaisePriority(Priority priority)
