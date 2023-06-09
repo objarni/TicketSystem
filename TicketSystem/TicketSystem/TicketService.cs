@@ -22,6 +22,21 @@ public class TicketService
         DateTime? utcNow = null,
         IEmailService emailService = null)
     {
+        var ticket = MakeValidTicket(title, priority, assignedTo, description, created, isPayingCustomer, utcNow);
+
+        if (ticket.Priority == Priority.High)
+        {
+            if (emailService == null)
+                emailService = new EmailServiceProxy();
+            emailService.SendEmailToAdministrator(title, assignedTo);
+        }
+
+        return ticket;
+    }
+
+    private static Ticket MakeValidTicket(string title, Priority priority, string assignedTo, string description,
+        DateTime created, bool isPayingCustomer, DateTime? utcNow)
+    {
         if (utcNow == null)
             utcNow = DateTime.UtcNow;
 
@@ -42,14 +57,6 @@ public class TicketService
             PriceDollars = CalculatePrice(finalPriority, isPayingCustomer),
             AccountManager = MaybeFindAccountManager(isPayingCustomer)
         };
-
-        if (finalPriority == Priority.High)
-        {
-            if (emailService == null)
-                emailService = new EmailServiceProxy();
-            emailService.SendEmailToAdministrator(title, assignedTo);
-        }
-
         return ticket;
     }
 
