@@ -25,7 +25,7 @@ public class TicketService
         if (title == null || description == null || title == "" || description == "")
             throw new InvalidTicketException("Title or description were null");
 
-        var user = FindUserOrThrow(assignedTo);
+        var assignedUser = FindUserOrThrow(assignedTo);
 
         if (utcNow == null)
             utcNow = DateTime.UtcNow;
@@ -42,7 +42,7 @@ public class TicketService
         var ticket = new Ticket
         {
             Title = title,
-            AssignedUser = user,
+            AssignedUser = assignedUser,
             Priority = priority,
             Description = description,
             Created = created,
