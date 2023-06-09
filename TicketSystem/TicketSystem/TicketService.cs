@@ -31,7 +31,7 @@ public class TicketService
         if (utcNow == null)
             utcNow = DateTime.UtcNow;
         
-        priority = CalculatePriority(title, priority, created, utcNow);
+        priority = CalculatePriority(title, priority, created, utcNow.Value);
 
         if (priority == Priority.High)
         {
@@ -62,7 +62,7 @@ public class TicketService
     }
 
     private static Priority CalculatePriority(string title, Priority priority, DateTime created,
-        [DisallowNull] DateTime? utcNow)
+        DateTime utcNow)
     {
         var priorityRaised = false;
         if (created < utcNow - TimeSpan.FromHours(1))
