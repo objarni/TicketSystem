@@ -65,12 +65,12 @@ public class TicketService
         DateTime utcNow)
     {
         var urgent = created < utcNow - TimeSpan.FromHours(1);
-        if (urgent)
-            return RaisePriority(priority);
-
         var important = title.Contains("Crash") || title.Contains("Important") ||
                         title.Contains("Failure");
-        return important ? RaisePriority(priority) : priority;
+        if (urgent || important)
+            return RaisePriority(priority);
+
+        return priority;
     }
 
     private static Priority RaisePriority(Priority priority)
