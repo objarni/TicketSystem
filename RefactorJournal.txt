@@ -1,3 +1,15 @@
+UPDATE: Put some refactoring in.
+
+Basically I focused on the 'low hanging fruit' instead of doing any major overhaul:
+  - look for pure functions (calculations in Eric Normand's "Grokking Simplicity" book/nomenclature)
+  - rearrange if/switch expressions and negate them if it seemed easier to read
+  - ... other miner stuff you can see in commit log.
+  
+
+
+--
+
+
 A brief description of what I did and why.
 
 First half hour was setting up environment so that I could run the project/tests on my Mac with Rider on it.
