@@ -41,7 +41,6 @@ public class TicketService
 
         User accountManager = null;
         if (isPayingCustomer) accountManager = new UserRepository().GetAccountManager();
-        var price = CalculatePrice(priority, isPayingCustomer);
 
         var ticket = new Ticket
         {
@@ -50,7 +49,7 @@ public class TicketService
             Priority = priority,
             Description = description,
             Created = created,
-            PriceDollars = price,
+            PriceDollars = CalculatePrice(priority, isPayingCustomer),
             AccountManager = accountManager
         };
         return ticket;
