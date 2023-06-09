@@ -69,13 +69,12 @@ public class TicketService
         {
             if (priority == Priority.Low)
             {
-                priority = Priority.Medium;
-                priorityRaised = true;
+                return Priority.Medium;
             }
-            else if (priority == Priority.Medium)
+
+            if (priority == Priority.Medium)
             {
-                priority = Priority.High;
-                priorityRaised = true;
+                return Priority.High;
             }
         }
 
