@@ -66,20 +66,28 @@ public class TicketService
     {
         if (created < utcNow - TimeSpan.FromHours(1))
         {
-            switch (priority)
-            {
-                case Priority.Low:
-                    return Priority.Medium;
-                case Priority.Medium:
-                    return Priority.High;
-            }
+            return RaisePriority(priority);
         }
 
-        if ((!title.Contains("Crash") && !title.Contains("Important") &&
-             !title.Contains("Failure"))) return priority;
-        if (priority == Priority.Low)
-            priority = Priority.Medium;
-        else if (priority == Priority.Medium) priority = Priority.High;
+        if (!title.Contains("Crash") && !title.Contains("Important") &&
+            !title.Contains("Failure")) return priority;
+
+        priority = RaisePriority(priority);
+
+        return priority;
+    }
+
+    private static Priority RaisePriority(Priority priority)
+    {
+        switch (priority)
+        {
+            case Priority.Low:
+                priority = Priority.Medium;
+                break;
+            case Priority.Medium:
+                priority = Priority.High;
+                break;
+        }
 
         return priority;
     }
