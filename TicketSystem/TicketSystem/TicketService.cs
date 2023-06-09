@@ -40,16 +40,12 @@ public class TicketService
             emailService.SendEmailToAdministrator(title, assignedTo);
         }
 
-        double price = 0;
         User accountManager = null;
         if (isPayingCustomer)
         {
             accountManager = new UserRepository().GetAccountManager();
         }        
-        if (isPayingCustomer)
-        {
-            price = priority == Priority.High ? 100 : 50;
-        }
+        var price = CalculatePrice(priority, isPayingCustomer);
 
         var ticket = new Ticket
         {
@@ -62,6 +58,17 @@ public class TicketService
             AccountManager = accountManager
         };
         return ticket;
+    }
+
+    private static double CalculatePrice(Priority priority, bool isPayingCustomer)
+    {
+        double price = 0;
+        if (isPayingCustomer)
+        {
+            price = priority == Priority.High ? 100 : 50;
+        }
+
+        return price;
     }
 
     private static Priority CalculatePriority(string title, Priority priority, DateTime created,
