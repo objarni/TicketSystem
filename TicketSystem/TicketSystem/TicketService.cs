@@ -39,9 +39,6 @@ public class TicketService
             emailService.SendEmailToAdministrator(title, assignedTo);
         }
 
-        User accountManager = null;
-        if (isPayingCustomer) accountManager = new UserRepository().GetAccountManager();
-
         var ticket = new Ticket
         {
             Title = title,
@@ -50,9 +47,16 @@ public class TicketService
             Description = description,
             Created = created,
             PriceDollars = CalculatePrice(priority, isPayingCustomer),
-            AccountManager = accountManager
+            AccountManager = MaybeFindAccountManager(isPayingCustomer)
         };
         return ticket;
+    }
+
+    private static User? MaybeFindAccountManager(bool isPayingCustomer)
+    {
+        User accountManager = null;
+        if (isPayingCustomer) accountManager = new UserRepository().GetAccountManager();
+        return accountManager;
     }
 
     private static double CalculatePrice(Priority priority, bool isPayingCustomer)
