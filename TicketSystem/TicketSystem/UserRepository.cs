@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design.Serialization;
 using System.Data.SqlClient;
 
 namespace TicketManagementSystem
@@ -6,15 +7,28 @@ namespace TicketManagementSystem
     public class UserRepository : IDisposable
     {
         private SqlConnection connection;
+
+        public static bool TestMode = false;
         
         public UserRepository()
         {
+            if (TestMode)
+                return;
             var connectionString = "a fake db conn string"; 
             connection = new SqlConnection(connectionString);
         }
         
         public User GetUser(string username)
         {
+            if (TestMode)
+            {
+                return new User()
+                {
+                    FirstName = username[0].ToString(), 
+                    LastName = username.Substring(1), 
+                    Username = username
+                };
+            }
             // Assume this method does not need to change and is connected to a database with users populated.
             try
             {
@@ -48,6 +62,8 @@ namespace TicketManagementSystem
 
         public void Dispose()
         {
+            if (TestMode)
+                return;
             // Assume this method does not need to change.
             connection.Dispose();
         }

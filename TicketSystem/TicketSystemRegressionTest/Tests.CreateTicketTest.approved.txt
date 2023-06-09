@@ -1,528 +1,1064 @@
-﻿[,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => System.NullReferenceException: Object reference not set to an instance of an object.
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
-  "Id": 0,
-  "Title": "title",
-  "Priority": 0,
-  "Description": null,
-  "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
-  },
-  "AccountManager": null,
-  "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
-}
-[title,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
-  "Id": 0,
-  "Title": "title",
-  "Priority": 1,
-  "Description": null,
-  "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
-  },
-  "AccountManager": null,
-  "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
-}
-[title,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
-  "Id": 0,
-  "Title": "title",
-  "Priority": 0,
-  "Description": "description",
-  "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
-  },
-  "AccountManager": null,
-  "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
-}
-[title,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+﻿[,Low,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Low,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Low,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Low,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Low,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Low,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Low,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Low,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Low,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => User  not found
+[title,Low,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => User  not found
+[title,Low,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[title,Low,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[title,Low,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => User  not found
+[title,Low,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => User  not found
+[title,Low,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[title,Low,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[title,Low,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[title,Low,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[title,Low,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Low,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Low,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[title,Low,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[title,Low,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Low,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Low,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 1,
   "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
-  "AccountManager": null,
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
   "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
+  "PriceDollars": 50
 }
-[title,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+[title,Low,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => {
   "Id": 0,
   "Title": "title",
-  "Priority": 0,
-  "Description": null,
+  "Priority": 2,
+  "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
-  "AccountManager": null,
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
   "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
+  "PriceDollars": 50
 }
-[title,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+[title,Low,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 1,
-  "Description": null,
+  "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[title,Low,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 2,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[title,Low,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
   "AccountManager": null,
   "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
-[title,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+[title,Low,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 2,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,Low,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,Low,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 2,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[title,Medium,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => User  not found
+[title,Medium,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => User  not found
+[title,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[title,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[title,Medium,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => User  not found
+[title,Medium,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => User  not found
+[title,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[title,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[title,Medium,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,Medium,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
 [title,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
   "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
   "AccountManager": null,
   "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
+Sent incident title: title
+Sent assigned to: Bjarni
 [title,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 1,
   "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
   "AccountManager": null,
   "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
-[title,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
-  "Id": 0,
-  "Title": "title",
-  "Priority": 0,
-  "Description": null,
-  "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
-  },
-  "AccountManager": null,
-  "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
-}
-[title,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
-  "Id": 0,
-  "Title": "title",
-  "Priority": 0,
-  "Description": null,
-  "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
-  },
-  "AccountManager": null,
-  "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
-}
-[title,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+[title,High,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[title,High,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[title,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,High,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[title,High,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[title,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,High,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => User  not found
+[title,High,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => User  not found
+[title,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[title,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[title,High,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => User  not found
+[title,High,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => User  not found
+[title,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[title,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[title,High,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[title,High,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[title,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,High,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[title,High,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[title,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[title,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[title,High,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
   "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
-  "AccountManager": null,
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
   "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
+  "PriceDollars": 100
 }
-[title,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,High,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
   "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
-  "AccountManager": null,
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
   "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
+  "PriceDollars": 100
 }
-[title,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
-  "Description": null,
+  "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
-  "AccountManager": null,
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
   "Created": "2023-05-31T12:00:00",
-  "PriceDollars": 0
+  "PriceDollars": 100
 }
-[title,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
-  "Description": null,
+  "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,High,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
   "AccountManager": null,
   "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
-[title,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
-[title,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.
-   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
-   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
-   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
-   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
-   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
-   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
-   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
-   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
-   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
-   at TicketManagementSystem.UserRepository..ctor() in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/UserRepository.csline: <LINE>
-   at TicketManagementSystem.TicketService.TicketInnerDeterministic(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystem/TicketService.csline: <LINE>
-   at TicketSystemRegressionTest.Tests.ToVerify(String title, Priority priority, String assignedTo, String description, DateTime created, Boolean isPayingCustomer, User user, DateTime utcNow) in /Users/olof/repos/github/TicketSystem/TicketSystem/TicketSystemRegressionTest/TicketSystemRegressionTest.csline: <LINE>
+Sent incident title: title
+Sent assigned to: Bjarni
+[title,High,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "title",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: title
+Sent assigned to: Bjarni
 [title,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
   "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
   "AccountManager": null,
   "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
+Sent incident title: title
+Sent assigned to: Bjarni
 [title,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
   "Id": 0,
   "Title": "title",
   "Priority": 0,
   "Description": "description",
   "AssignedUser": {
-    "Username": "objarni",
-    "FirstName": "Olof",
-    "LastName": "Bjarnason"
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
   },
   "AccountManager": null,
   "Created": "2023-05-31T12:00:00",
   "PriceDollars": 0
 }
+Sent incident title: title
+Sent assigned to: Bjarni
+[Crash,Low,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => User  not found
+[Crash,Low,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => User  not found
+[Crash,Low,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[Crash,Low,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[Crash,Low,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => User  not found
+[Crash,Low,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => User  not found
+[Crash,Low,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[Crash,Low,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Low,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 50
+}
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[Crash,Low,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 1,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+[Crash,Medium,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => User  not found
+[Crash,Medium,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => User  not found
+[Crash,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[Crash,Medium,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[Crash,Medium,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => User  not found
+[Crash,Medium,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => User  not found
+[Crash,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[Crash,Medium,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,Medium,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,Medium,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => User  not found
+[Crash,High,,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => User  not found
+[Crash,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[Crash,High,,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[Crash,High,,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => User  not found
+[Crash,High,,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => User  not found
+[Crash,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => User  not found
+[Crash,High,,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => User  not found
+[Crash,High,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,Bjarni,,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,Bjarni,,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,Bjarni,,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => Title or description were null
+[Crash,High,Bjarni,,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => Title or description were null
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,True,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,True,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": {
+    "Username": "Sarah",
+    "FirstName": "S",
+    "LastName": "arah"
+  },
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 100
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,False,,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 15:00:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni
+[Crash,High,Bjarni,description,05/31/2023 12:00:00,False,TicketManagementSystem.User,05/31/2023 12:30:00] => {
+  "Id": 0,
+  "Title": "Crash",
+  "Priority": 0,
+  "Description": "description",
+  "AssignedUser": {
+    "Username": "Bjarni",
+    "FirstName": "B",
+    "LastName": "jarni"
+  },
+  "AccountManager": null,
+  "Created": "2023-05-31T12:00:00",
+  "PriceDollars": 0
+}
+Sent incident title: Crash
+Sent assigned to: Bjarni

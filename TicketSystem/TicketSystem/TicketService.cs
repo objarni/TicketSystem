@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json;
 using EmailService;
 
 namespace TicketManagementSystem;
@@ -8,68 +9,43 @@ public class TicketService
     public int CreateTicket(string title, Priority priority, string assignedTo, string description,
         DateTime created, bool isPayingCustomer)
     {
+        var ticket = TicketInnerDeterministic(title, priority, assignedTo, description, created, isPayingCustomer);
+        return TicketRepository.CreateTicket(ticket);
+    }
+    
+    public static Ticket TicketInnerDeterministic(
+        string title,
+        Priority priority,
+        string assignedTo,
+        string description,
+        DateTime created,
+        bool isPayingCustomer,
+        DateTime? utcNow = null,
+        IEmailService emailService = null)
+    {
         if (title == null || description == null || title == "" || description == "")
             throw new InvalidTicketException("Title or description were null");
 
-        User user = null;
-        using (var ur = new UserRepository())
-        {
-            if (assignedTo != null) user = ur.GetUser(assignedTo);
-        }
+        User user = FindUserOrThrow(assignedTo);
 
-        var ticket = CreateTicketInner(title, priority, assignedTo, description, created, isPayingCustomer, user);
-
-        return TicketRepository.CreateTicket(ticket);
-    }
-
-    public static Ticket CreateTicketInner(string title, Priority priority, string? assignedTo, string description,
-        DateTime created, bool isPayingCustomer, User? user)
-    {
-        var utcNow = DateTime.UtcNow;
-        return TicketInnerDeterministic(title, priority, assignedTo, description, created, isPayingCustomer, user, utcNow);
-    }
-
-    public static Ticket TicketInnerDeterministic(string title, Priority priority, string? assignedTo, string description,
-        DateTime created, bool isPayingCustomer, User? user, DateTime utcNow)
-    {
-        if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
-
-        var priorityRaised = false;
-        if (created < utcNow - TimeSpan.FromHours(1))
-        {
-            if (priority == Priority.Low)
-            {
-                priority = Priority.Medium;
-                priorityRaised = true;
-            }
-            else if (priority == Priority.Medium)
-            {
-                priority = Priority.High;
-                priorityRaised = true;
-            }
-        }
-
-        if ((title.Contains("Crash") || title.Contains("Important") ||
-             title.Contains("Failure")) && !priorityRaised)
-        {
-            if (priority == Priority.Low)
-                priority = Priority.Medium;
-            else if (priority == Priority.Medium) priority = Priority.High;
-        }
+        if (utcNow == null)
+            utcNow = DateTime.UtcNow;
+        
+        priority = CalculatePriority(title, priority, created, utcNow.Value);
 
         if (priority == Priority.High)
         {
-            var emailService = new EmailServiceProxy();
+            if (emailService == null)
+                emailService = new EmailServiceProxy();
             emailService.SendEmailToAdministrator(title, assignedTo);
         }
 
-        double price = 0;
         User accountManager = null;
         if (isPayingCustomer)
         {
             accountManager = new UserRepository().GetAccountManager();
-            price = priority == Priority.High ? 100 : 50;
-        }
+        }        
+        var price = CalculatePrice(priority, isPayingCustomer);
 
         var ticket = new Ticket
         {
@@ -84,15 +60,58 @@ public class TicketService
         return ticket;
     }
 
-    public void AssignTicket(int id, string username)
+    private static double CalculatePrice(Priority priority, bool isPayingCustomer)
     {
-        User user = null;
-        using (var userRepository = new UserRepository())
+        double price = 0;
+        if (isPayingCustomer)
         {
-            if (username != null) user = userRepository.GetUser(username);
+            price = priority == Priority.High ? 100 : 50;
         }
 
-        if (user == null) throw new UnknownUserException("User not found");
+        return price;
+    }
+
+    private static Priority CalculatePriority(string title, Priority priority, DateTime created,
+        DateTime utcNow)
+    {
+        var urgent = created < utcNow - TimeSpan.FromHours(1);
+        var important = title.Contains("Crash") || title.Contains("Important") ||
+                        title.Contains("Failure");
+        if (urgent || important)
+            return RaisePriority(priority);
+
+        return priority;
+    }
+
+    private static Priority RaisePriority(Priority priority)
+    {
+        switch (priority)
+        {
+            case Priority.Low:
+                priority = Priority.Medium;
+                break;
+            case Priority.Medium:
+                priority = Priority.High;
+                break;
+        }
+
+        return priority;
+    }
+
+    private static User FindUserOrThrow(string? assignedTo)
+    {
+        User user = null;
+        using (var ur = new UserRepository())
+        {
+            if (assignedTo != null) user = ur.GetUser(assignedTo);
+        }
+        if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
+        return user;
+    }
+
+    public void AssignTicket(int id, string username)
+    {
+        User user = FindUserOrThrow(username);
 
         var ticket = TicketRepository.GetTicket(id);
 
