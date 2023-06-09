@@ -64,11 +64,13 @@ public class TicketService
     private static Priority CalculatePriority(string title, Priority priority, DateTime created,
         DateTime utcNow)
     {
-        if (created < utcNow - TimeSpan.FromHours(1))
+        var urgent = created < utcNow - TimeSpan.FromHours(1);
+        if (urgent)
             return RaisePriority(priority);
 
-        if (!title.Contains("Crash") && !title.Contains("Important") &&
-            !title.Contains("Failure")) return priority;
+        var notImportant = !title.Contains("Crash") && !title.Contains("Important") &&
+                !title.Contains("Failure");
+        if (notImportant) return priority;
 
         return RaisePriority(priority);
     }
