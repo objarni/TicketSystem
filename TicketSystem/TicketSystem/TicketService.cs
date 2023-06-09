@@ -64,7 +64,6 @@ public class TicketService
     private static Priority CalculatePriority(string title, Priority priority, DateTime created,
         DateTime utcNow)
     {
-        var priorityRaised = false;
         if (created < utcNow - TimeSpan.FromHours(1))
         {
             if (priority == Priority.Low)
@@ -79,7 +78,7 @@ public class TicketService
         }
 
         if ((!title.Contains("Crash") && !title.Contains("Important") &&
-             !title.Contains("Failure")) || priorityRaised) return priority;
+             !title.Contains("Failure"))) return priority;
         if (priority == Priority.Low)
             priority = Priority.Medium;
         else if (priority == Priority.Medium) priority = Priority.High;
