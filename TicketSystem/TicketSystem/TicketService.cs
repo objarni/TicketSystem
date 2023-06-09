@@ -68,9 +68,9 @@ public class TicketService
         if (urgent)
             return RaisePriority(priority);
 
-        var notImportant = !title.Contains("Crash") && !title.Contains("Important") &&
-                !title.Contains("Failure");
-        if (notImportant) return priority;
+        var important = title.Contains("Crash") || title.Contains("Important") ||
+                        title.Contains("Failure");
+        if (!important) return priority;
 
         return RaisePriority(priority);
     }
