@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Text.Json;
+﻿using System.Text.Json;
 using EmailService;
 
 namespace TicketManagementSystem;
@@ -12,7 +11,7 @@ public class TicketService
         var ticket = TicketInnerDeterministic(title, priority, assignedTo, description, created, isPayingCustomer);
         return TicketRepository.CreateTicket(ticket);
     }
-    
+
     public static Ticket TicketInnerDeterministic(
         string title,
         Priority priority,
@@ -26,11 +25,11 @@ public class TicketService
         if (title == null || description == null || title == "" || description == "")
             throw new InvalidTicketException("Title or description were null");
 
-        User user = FindUserOrThrow(assignedTo);
+        var user = FindUserOrThrow(assignedTo);
 
         if (utcNow == null)
             utcNow = DateTime.UtcNow;
-        
+
         priority = CalculatePriority(title, priority, created, utcNow.Value);
 
         if (priority == Priority.High)
@@ -41,10 +40,7 @@ public class TicketService
         }
 
         User accountManager = null;
-        if (isPayingCustomer)
-        {
-            accountManager = new UserRepository().GetAccountManager();
-        }        
+        if (isPayingCustomer) accountManager = new UserRepository().GetAccountManager();
         var price = CalculatePrice(priority, isPayingCustomer);
 
         var ticket = new Ticket
@@ -63,10 +59,7 @@ public class TicketService
     private static double CalculatePrice(Priority priority, bool isPayingCustomer)
     {
         double price = 0;
-        if (isPayingCustomer)
-        {
-            price = priority == Priority.High ? 100 : 50;
-        }
+        if (isPayingCustomer) price = priority == Priority.High ? 100 : 50;
 
         return price;
     }
@@ -105,20 +98,17 @@ public class TicketService
         {
             if (assignedTo != null) user = ur.GetUser(assignedTo);
         }
+
         if (user == null) throw new UnknownUserException("User " + assignedTo + " not found");
         return user;
     }
 
     public void AssignTicket(int id, string username)
     {
-        User user = FindUserOrThrow(username);
-
+        var user = FindUserOrThrow(username);
         var ticket = TicketRepository.GetTicket(id);
-
         if (ticket == null) throw new ApplicationException("No ticket found for id " + id);
-
         ticket.AssignedUser = user;
-
         TicketRepository.UpdateTicket(ticket);
     }
 
