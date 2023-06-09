@@ -30,20 +30,20 @@ public class TicketService
 
         var assignedUser = FindUserOrThrow(assignedTo);
 
-        priority = CalculatePriority(title, priority, created, utcNow.Value);
+        var finalPriority = CalculatePriority(title, priority, created, utcNow.Value);
 
         var ticket = new Ticket
         {
             Title = title,
             AssignedUser = assignedUser,
-            Priority = priority,
+            Priority = finalPriority,
             Description = description,
             Created = created,
-            PriceDollars = CalculatePrice(priority, isPayingCustomer),
+            PriceDollars = CalculatePrice(finalPriority, isPayingCustomer),
             AccountManager = MaybeFindAccountManager(isPayingCustomer)
         };
 
-        if (priority == Priority.High)
+        if (finalPriority == Priority.High)
         {
             if (emailService == null)
                 emailService = new EmailServiceProxy();
